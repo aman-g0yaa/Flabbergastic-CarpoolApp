@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgetPw_phoneNo"
+    android:background="#FFFFFF"
+    android:layout_margin="10dp"
+    >
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image1"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/forgot_password_img"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image1"
+        android:text="Forget Password"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:id="@+id/tv1"
+        android:textAllCaps="true"
+        android:fontFamily="@font/muli_black"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:text="Please provide your account's username and phone number."
+        android:textColor="#000000"
+        android:id="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:fontFamily="@font/muli_light"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center">
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:id="@+id/ForgotpwNameID"
+        android:layout_marginTop="30dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="#000000"
+        app:boxStrokeWidth="2dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:hint="User Name"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/ForgotpwNameID"
+    android:id="@+id/ForgotpwID"
+    android:layout_marginTop="10dp"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    app:boxStrokeColor="#000000"
+    app:boxStrokeWidth="2dp"
+    android:layout_gravity="center"
+    android:layout_centerHorizontal="true"
+    android:hint="Phone Number"
+    >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+    </com.google.android.material.textfield.TextInputEditText>
+</com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/reset_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ForgotpwID"
+        android:layout_marginTop="15dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:onClick="registerUser"
+        android:text="Reset"
+        android:textColor="#ffffff">
+
+    </Button>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:elevation="8dp"
+        android:layout_centerInParent="true">
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+</ScrollView>

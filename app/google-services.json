@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "245473183961",
+    "project_id": "carpool-app-finale",
+    "storage_bucket": "carpool-app-finale.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245473183961:android:df075e09f6f6d51a2056c8",
+        "android_client_info": {
+          "package_name": "com.amangoyal.finale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245473183961-11gmh1bpmqbt6gj3i66lbk8qje2jdmqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByXDvI2SqU6HpdIwaq1-6FNmEz6c3KYfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245473183961-11gmh1bpmqbt6gj3i66lbk8qje2jdmqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

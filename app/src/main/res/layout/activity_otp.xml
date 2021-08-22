@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Otp"
+    android:id="@+id/scrollview_id"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_black"
+            android:id="@+id/tv1"
+            android:text="Co\nde"
+            android:textColor="#000000"
+            android:textSize="100sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@+id/tv1"
+            android:id="@+id/tv2"
+            android:fontFamily="@font/muli_black"
+            android:text="verification"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textAllCaps="true"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:id="@+id/tv3"
+            android:fontFamily="@font/muli_light"
+            android:includeFontPadding="false"
+            android:text="Enter One Time Password Send to \n"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/display_phoneid"
+            android:layout_below="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/muli_light"
+            android:includeFontPadding="false"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/pinview_id"
+            android:layout_below="@+id/display_phoneid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            app:itemCount="6"
+            app:itemWidth="50dp"
+            app:itemHeight="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:lineColor="#000000"
+            android:background="#FFFFFF"
+            style="@style/PinWidget.PinView"
+            android:inputType="number"
+            android:cursorVisible="true"
+            app:cursorColor="#000000"
+            app:hideLineWhenFilled="true"
+            app:itemRadius="5dp"/>
+
+        <Button
+            android:id="@+id/verify_id"
+            android:layout_below="@+id/pinview_id"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="#000000"
+            android:onClick="checkOtp"
+            android:text="Verify Code"
+            android:textColor="#FFFFFF" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:elevation="8dp"
+            android:layout_centerInParent="true">
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/colorAccent" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

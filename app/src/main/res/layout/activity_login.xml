@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".login"
+    android:padding="20dp">
+
+    //linear layout becoz everything is stacked vertically
+
+    //top left corner logo
+
+
+    <ImageView
+        android:id="@+id/logo_id2"
+        android:layout_width="150dp"
+        android:layout_height="121dp"
+        android:transitionName="logo_trans"
+        app:srcCompat="@drawable/logo1" />
+
+    //hello there...text view
+
+    <TextView
+        android:id="@+id/logoname_id2"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:fontFamily="@font/bungee"
+        android:text="Hello there , Welcome Back"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:transitionName="logoname_trans"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    //sign in to .... text view
+    <TextView
+        android:id="@+id/tag_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In to continue"
+        android:transitionName="tag_trans"
+        android:textSize="18sp" />
+
+    //linear layout for username password etc
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        //special variation of edit text (material)
+        //edit text layout ---style = outline box
+
+        //username
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:layout_marginTop="20dp"
+            android:transitionName="username_trans"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/username_id"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            //edit text inside a material edit text layout
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //passowrd
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:transitionName="password_trans"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/username_id"
+            android:layout_marginBottom="10dp"
+            app:passwordToggleEnabled="true"
+            android:id="@+id/password_id"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            //edit text inside a material edit text layout
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //forgot pw
+        <Button
+            android:id="@+id/forgot_pw_bt"
+            android:layout_width="200dp"
+            android:layout_below="@+id/password_id"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/password_id"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:text="Forget Password" />
+
+
+        //go
+
+        <Button
+            android:id="@+id/signin_go_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/forgot_pw_bt"
+            android:layout_marginBottom="5dp"
+            android:background="#000"
+            android:onClick="loginUser"
+            android:text="GO"
+            android:textColor="#fff"
+            android:transitionName="signup_trans" />
+
+        //new user
+        <Button
+            android:id="@+id/new_signup_bt"
+            android:layout_width="200dp"
+            android:layout_below="@+id/signin_go_bt"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:elevation="0dp"
+            android:text="New User? SIGN UP"
+            android:transitionName="signin_trans"
+            android:textColor="#000"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:elevation="8dp"
+        android:layout_centerInParent="true">
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent" />
+
+    </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- theme which has no action bar   -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#171717</item>
+        <item name="colorPrimaryDark">#171717</item>
+        <item name="colorAccent">@color/colorAccent</item>
+<!--  code to change status bar colour  -->
+<!--        <item name="android:statusBarColor">@color/browser_actions_bg_grey</item>-->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+
+    <!-- theme which ha action bar   -->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#171717</item>
+        <item name="colorPrimaryDark">#171717</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

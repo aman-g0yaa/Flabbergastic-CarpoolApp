@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sign_up"
+    android:layout_margin="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    //logo
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:transitionName="logo_trans"
+        android:src="@drawable/logo1"/>
+    //tag welcome
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:transitionName="logoname_trans"
+        android:textSize="40sp"
+        android:fontFamily="@font/bungee"
+        android:layout_marginTop="-40dp"/>
+
+
+
+    //linear layout for our edit texts
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        //full name
+        //input type text = will accept only alphabets
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/full_name_id"
+            android:hint="FULL NAME"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //username
+        //counter enabled = max it will allow 15 character later shows red
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_name_id"
+            android:layout_below="@id/full_name_id"
+            android:transitionName="username_trans"
+            android:hint="USERNAME"
+            app:counterMaxLength="15"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //phone number
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name_id"
+            android:id="@+id/phone_number_id"
+            android:hint="PHONE No"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        //password
+        //toggle enabled = eye feature
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:transitionName="password_trans"
+            android:layout_below="@id/phone_number_id"
+            android:layout_height="wrap_content"
+            android:id="@+id/pass_word_id"
+            android:hint="PASSWORD"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:elevation="8dp"
+            android:layout_centerInParent="true">
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/colorAccent" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    // go button
+
+    //already have an ..button
+    //6zeros + 2 zeros = transparent background
+
+    <Button
+        android:id="@+id/signup_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#000"
+        android:onClick="registerUser"
+        android:text="GO"
+        android:textColor="#fff"
+        android:transitionName="signup_trans" />
+
+    <Button
+        android:id="@+id/signin_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="Already have an Account ? LogIn"
+        android:transitionName="signin_trans" />
+
+
+</LinearLayout>
+</ScrollView>

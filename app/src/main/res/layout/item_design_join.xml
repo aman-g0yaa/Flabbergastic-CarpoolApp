@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/boundary_background">
+
+
+        <!--        <ImageView-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginTop="64dp"-->
+<!--            android:layout_marginRight="50dp"-->
+<!--            android:src="@drawable/frompic"></ImageView>-->
+
+        <ImageView
+            android:id="@+id/seat_image_id"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="43dp"
+            android:layout_marginRight="27dp"
+            android:src="@drawable/seatedited"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="128dp"
+            android:text="Available"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/from_t"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="89dp"
+            android:text="From:"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/from_text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="77dp"
+            android:layout_marginTop="91dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="Railyway station"
+            android:textColor="#000000"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginBottom="84dp"
+            android:text="To:"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/to_text_id"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="77dp"
+            android:layout_marginBottom="85dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="Railyway station"
+            android:textColor="#000000"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/date_text_id"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginBottom="33dp"
+            android:fontFamily="@font/days_one"
+            android:text="Date"
+            android:textColor="#000000"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/time_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/days_one"
+            android:text="Time"
+            android:textColor="#000000"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/name_text_id"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="34dp"
+            android:textStyle="bold"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/seat_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="56dp"
+            android:layout_marginRight="76dp"
+            android:text="Num"
+            android:textColor="#000000"
+            android:textSize="17sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/status_bt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/custom_button_design"
+            android:text="status"
+            android:textColor="#ffffff">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

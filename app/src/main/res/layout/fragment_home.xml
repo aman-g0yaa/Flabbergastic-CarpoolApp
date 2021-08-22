@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+
+    <Button
+        android:id="@+id/create_bt"
+        android:layout_width="213dp"
+        android:layout_height="90dp"
+        android:background="@drawable/custom_button_design"
+        android:text="CREATE A POOL"
+        android:textColor="#D3D3D3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/join_bt"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <Button
+        android:id="@+id/join_bt"
+        android:layout_width="213dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/custom_button_design"
+        android:text="JOIN A POOL"
+        android:textColor="#D3D3D3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/my_pool_bt"
+        android:layout_width="213dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="424dp"
+        android:background="@drawable/custom_button_design"
+        android:text="MY POOL"
+        android:textColor="#D3D3D3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
