@@ -67,10 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
                 pairs[0] = new Pair<View,String>(logo,"logo_trans");
                 pairs[1] = new Pair<View,String>(logoname,"logoname_trans");
-
-
-                //i have commented out the animation becoz i was facing some issue - will fix later :)
-
+S
 
                 //"if" statement becoz this animation wont coz crash for devices below lollipop
 

@@ -101,19 +101,6 @@ public class login extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(login.this,sign_up.class);
 
-
-
-//                Pair[] pairs = new Pair[7];
-//
-//                pairs[0] = new Pair<View,String>(logo,"logo_trans");
-//                pairs[1] = new Pair<View,String>(tag1,"logoname_trans");
-//                pairs[2] = new Pair<View,String>(tag2,"tag_trans");
-//                pairs[3] = new Pair<View,String>(username,"username_trans");
-//                pairs[4] = new Pair<View,String>(password,"password_trans");
-//                pairs[5] = new Pair<View,String>(signup,"signup_trans");
-//                pairs[6] = new Pair<View,String>(login,"signin_trans");
-
-
                     startActivity(intent);
 
             }

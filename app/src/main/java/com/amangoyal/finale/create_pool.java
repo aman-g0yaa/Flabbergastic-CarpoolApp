@@ -313,7 +313,6 @@ public class    create_pool extends AppCompatActivity {
                                 }
                             });
                             unix = unixdate+ " "+ unixtime;
-//                            Log.e("yo yo" , unix);
                             reference.child(username).child("name").setValue(name);
                             reference.child(username).child("username").setValue(username);
                             reference.child(username).child("from").setValue(fromData);
@@ -376,7 +375,6 @@ public class    create_pool extends AppCompatActivity {
                         }
                     });
                     unix = unixdate+ " "+ unixtime;
-//                    Log.e("yo yo" , unix);
                     reference.child(username).child("name").setValue(name);
                     reference.child(username).child("username").setValue(username);
                     reference.child(username).child("from").setValue(fromData);
